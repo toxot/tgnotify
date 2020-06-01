@@ -1,0 +1,11 @@
+version: "2"
+services:
+  tgnofity:
+    container_name: "tgnofity_api"
+    image: toxot/tgnofity_api:latest
+    ports:
+      - "8001:8001"
+    environment:
+      TG_TOKEN: 'botXXXXXXX'
+      TGAPI_PORT: 8001
+      API_AUTHKEY: '123456'
